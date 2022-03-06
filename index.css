@@ -1,0 +1,160 @@
+body {
+    background-color:rgb(179, 230, 225)
+}
+
+/* fonts */
+    h1 {
+        font-family:'Amatic SC',cursive;
+        text-align:right;
+        font-size: 600%;
+        padding: 0%;
+        border: 0%;
+        margin: 0%;
+        margin-top: 8%;
+        }
+
+
+    h2 {
+        font-family:'Amatic SC',cursive;
+        text-align:right;
+        font-size: 300%;
+        padding: 0%;
+        border: 0%;
+        margin: 0%;
+        margin-bottom: 8%
+        }  
+
+    h3 {
+        font-family:'Amatic SC',cursive;
+        text-align:left;
+        font-size: 200%;
+        margin: 0%;
+    }    
+
+
+    p {
+        font-family:'Amatic SC',cursive;
+        text-align:center;
+        font-size: 150%;
+        margin: 0%; 
+        padding-top: 5%;
+    }
+
+
+/* Other */
+
+    hr {
+        border: none;
+        height: 5px;
+        color:black;
+        background-color: #333;
+        
+    }    
+
+
+    img {
+        max-height: 150%;
+        max-width: 150%;
+        margin-left: 20%;
+        
+    }
+
+
+    nav a:hover{
+        background-color: orange;
+    }    
+ 
+
+/* Containers */
+
+
+.flex-top-menu {
+    display: flex;
+    flex-direction:row;
+    align-items: left;
+    margin-top: 5%;
+    margin-bottom: 0%;
+    /*background-color:rgb(0, 255, 149)*/
+    
+}
+
+
+
+
+
+
+
+
+/* the following code is for the navigation bar at the bottom of the page */
+
+nav {
+    /*background-color:blueviolet;*/
+    margin-top: 0%;
+    margin-bottom: 5%;
+}
+
+nav ul {
+    list-style-type:none;
+    padding: 0%;
+    margin: 0%;
+    font-family:'Amatic SC',cursive;
+    text-align:left;
+    font-size: 200%;
+}
+
+nav a{
+    text-decoration:none;
+    color:black;
+    display: block;
+    padding: 0%;
+}
+
+a:hover{
+    background-color: orange;
+}
+
+
+
+
+/* Now we use media query to make it look nicer for bigger screens*/
+
+@media screen and (min-width: 768px) {
+    
+    nav ul{
+        display:flex;
+}
+
+    nav li{
+        flex: 1 1 0;
+        text-align: center;
+    }
+
+}
+
+
+
+
+
+
+/* Middle Section */
+
+.float-container {  
+    display:flex;
+    border: 3px solid #fff,
+    padding: 20px;
+}
+
+
+.float-childLeft{
+display:block;
+float:left;
+padding: 20px;
+flex-direction:column;
+}
+
+.float-childRight{
+    width: 50%;
+    float:right;
+    padding: 20px;
+
+}
