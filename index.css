@@ -63,7 +63,7 @@ body {
     img {
         max-height: 150%;
         max-width: 150%;
-        margin-left: 20%;
+       
         
     }
 
@@ -168,8 +168,8 @@ flex-direction:column;
 }
 
 
-
-
+/* 
+/////////////////// */
 /* The section below is for MyProjects tab*/
 
 .row {
@@ -190,6 +190,8 @@ flex-direction:column;
     vertical-align: middle;
     width: 100%;
   }
+
+ 
   
   /* Responsive layout - makes a two column-layout instead of four columns */
   @media screen and (max-width: 800px) {
@@ -215,3 +217,9 @@ flex-direction:column;
     margin-right: 20%;
   }
   
+  .mainBanner {
+    display:block;
+    max-width: 100%;
+    max-height: auto;
+    padding-right:200%;
+  }
