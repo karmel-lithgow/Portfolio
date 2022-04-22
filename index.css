@@ -61,8 +61,8 @@ body {
 
 
     img {
-        max-height: 150%;
-        max-width: 150%;
+        max-height: 60%;
+        max-width: auto;
        
         
     }
@@ -172,54 +172,47 @@ flex-direction:column;
 /////////////////// */
 /* The section below is for MyProjects tab*/
 
-.row {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 0 4px;
-  }
-  
-  /* Create four equal columns that sits next to each other */
-  .column {
-    flex: 25%;
-    max-width: 25%;
-    padding: 0 4px;
-  }
-  
-  .column img {
-    margin-top: 8px;
-    vertical-align: middle;
-    width: 100%;
-  }
 
- 
-  
-  /* Responsive layout - makes a two column-layout instead of four columns */
-  @media screen and (max-width: 800px) {
-    .column {
-      flex: 50%;
-      max-width: 50%;
-    }
-  }
-  
-  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-  @media screen and (max-width: 600px) {
-    .column {
-      flex: 100%;
-      max-width: 100%;
-    }
-  }
+.polaroid a {
+  background: #ffffff;
+  display: inline-block;
+  margin: 5px 5px 30px;
+  padding: 15px 15px 30px;
+  text-align: center;
+  text-decoration: none;
+  -webkit-box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+  z-index: 0;
+  position: relative;
+}
+.polaroid a:after {
+  color: #333;
+  font-size: 25px;
+  font-family: 'Amatic SC';
+  content: attr(title);
+  position: relative;
+  top: 15px;
+}
+.polaroid img {
+  display: block;
+  width: 250px;
+}
+.polaroid a:hover {
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  transform: scale(1.2);
+  z-index: 10;
+  -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.7);
+  -moz-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.7);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.7);
+}
 
+.smallImg {
+  max-height: 10%;
+  max-width: 10%;
+}
 
-
-  .textBox {
-    display: block;
-    margin-left: 20%;
-    margin-right: 20%;
-  }
-  
-  .mainBanner {
-    display:block;
-    max-width: 100%;
-    max-height: auto;
-    padding-right:200%;
-  }
